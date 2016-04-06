@@ -9,7 +9,8 @@
     <p>Welcome to <%= title %></p>
     <p><a href='/users'>Users</a></p>
     <% if (user) { %>
-      <p>Signed in as <%= user.email %>
+      <p>Signed in as ID # <%= user.id %></p>
+      <p>Signed in as <%= user.email %></p>
       <p><a href='/logout'>Logout</a></p>
     <% } else { %>
       <p>Not signed in</p>

@@ -18,10 +18,10 @@ router.post('/signin', (req, res, next) => {
       res.render('auth/signin.ejs', {error: err});
     } else {
       req.session.user = user;
+      console.log(req.session);
       res.redirect('/');
     }
   });
 });
 
 module.exports = router;
-
