@@ -5,6 +5,7 @@ Setting up this application:
 ```bash
 npm install
 createdb form-based-auth
+touch .env
 knex migrate:latest
 knex seed:run
 nodemon
